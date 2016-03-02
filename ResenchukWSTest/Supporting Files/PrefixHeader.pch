@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  ResenchukWSTest
+//
+//  Created by ROMAN RESENCHUK on 17.02.16.
+//  Copyright © 2016 ROMAN RESENCHUK. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "RWConstants.h"
+
+#endif /* PrefixHeader_pch */

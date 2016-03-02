@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F86ABD8D1C737036002BE44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABD8C1C737036002BE44C /* main.m */; };
+		F86ABD901C737036002BE44C /* RWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABD8F1C737036002BE44C /* RWAppDelegate.m */; };
+		F86ABD961C737036002BE44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86ABD941C737036002BE44C /* Main.storyboard */; };
+		F86ABD981C737037002BE44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86ABD971C737037002BE44C /* Assets.xcassets */; };
+		F86ABD9B1C737037002BE44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86ABD991C737037002BE44C /* LaunchScreen.storyboard */; };
+		F86ABDBB1C7370B1002BE44C /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABDB91C7370B1002BE44C /* SRWebSocket.m */; };
+		F86ABDBD1C7371B9002BE44C /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F86ABDBC1C7371B9002BE44C /* libicucore.tbd */; };
+		F86ABDC11C737909002BE44C /* FDKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABDC01C737909002BE44C /* FDKeychain.m */; };
+		F86ABDC61C737F74002BE44C /* RWInitialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABDC51C737F74002BE44C /* RWInitialVC.m */; };
+		F86ABDC91C737F83002BE44C /* RWLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABDC81C737F83002BE44C /* RWLoginVC.m */; };
+		F86ABDCC1C737F9E002BE44C /* RWSuccessLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABDCB1C737F9E002BE44C /* RWSuccessLoginVC.m */; };
+		F86ABDD01C7384E7002BE44C /* RWWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABDCF1C7384E7002BE44C /* RWWebSocket.m */; };
+		F86ABDD31C7466F8002BE44C /* RWWebSocketCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABDD21C7466F8002BE44C /* RWWebSocketCommands.m */; };
+		F86ABDD61C746C7B002BE44C /* NSDictionary+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABDD51C746C7B002BE44C /* NSDictionary+Helpers.m */; };
+		F86ABDD91C746D12002BE44C /* RWWebSocketResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F86ABDD81C746D12002BE44C /* RWWebSocketResponseHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F86ABD881C737036002BE44C /* ResenchukWSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResenchukWSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86ABD8C1C737036002BE44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F86ABD8E1C737036002BE44C /* RWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWAppDelegate.h; sourceTree = "<group>"; };
+		F86ABD8F1C737036002BE44C /* RWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWAppDelegate.m; sourceTree = "<group>"; };
+		F86ABD951C737036002BE44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F86ABD971C737037002BE44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F86ABD9A1C737037002BE44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F86ABD9C1C737037002BE44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F86ABDB81C7370B1002BE44C /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		F86ABDB91C7370B1002BE44C /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		F86ABDBC1C7371B9002BE44C /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		F86ABDBF1C737909002BE44C /* FDKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDKeychain.h; sourceTree = "<group>"; };
+		F86ABDC01C737909002BE44C /* FDKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDKeychain.m; sourceTree = "<group>"; };
+		F86ABDC41C737F74002BE44C /* RWInitialVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWInitialVC.h; sourceTree = "<group>"; };
+		F86ABDC51C737F74002BE44C /* RWInitialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWInitialVC.m; sourceTree = "<group>"; };
+		F86ABDC71C737F83002BE44C /* RWLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWLoginVC.h; sourceTree = "<group>"; };
+		F86ABDC81C737F83002BE44C /* RWLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWLoginVC.m; sourceTree = "<group>"; };
+		F86ABDCA1C737F9E002BE44C /* RWSuccessLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSuccessLoginVC.h; sourceTree = "<group>"; };
+		F86ABDCB1C737F9E002BE44C /* RWSuccessLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSuccessLoginVC.m; sourceTree = "<group>"; };
+		F86ABDCE1C7384E7002BE44C /* RWWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWWebSocket.h; sourceTree = "<group>"; };
+		F86ABDCF1C7384E7002BE44C /* RWWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWWebSocket.m; sourceTree = "<group>"; };
+		F86ABDD11C7466F8002BE44C /* RWWebSocketCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWWebSocketCommands.h; sourceTree = "<group>"; };
+		F86ABDD21C7466F8002BE44C /* RWWebSocketCommands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWWebSocketCommands.m; sourceTree = "<group>"; };
+		F86ABDD41C746C7B002BE44C /* NSDictionary+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Helpers.h"; sourceTree = "<group>"; };
+		F86ABDD51C746C7B002BE44C /* NSDictionary+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Helpers.m"; sourceTree = "<group>"; };
+		F86ABDD71C746D12002BE44C /* RWWebSocketResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWWebSocketResponseHandler.h; sourceTree = "<group>"; };
+		F86ABDD81C746D12002BE44C /* RWWebSocketResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWWebSocketResponseHandler.m; sourceTree = "<group>"; };
+		F86ABDDA1C748159002BE44C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F86ABDDB1C7481C4002BE44C /* RWConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWConstants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F86ABD851C737036002BE44C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86ABDBD1C7371B9002BE44C /* libicucore.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F86ABD7F1C737036002BE44C = {
+			isa = PBXGroup;
+			children = (
+				F86ABD891C737036002BE44C /* Products */,
+				F86ABD8A1C737036002BE44C /* ResenchukWSTest */,
+			);
+			sourceTree = "<group>";
+		};
+		F86ABD891C737036002BE44C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABD881C737036002BE44C /* ResenchukWSTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F86ABD8A1C737036002BE44C /* ResenchukWSTest */ = {
+			isa = PBXGroup;
+			children = (
+				F8D67C4A1C87820F00318B6E /* App */,
+				F86ABDC31C737F45002BE44C /* Libs */,
+				F86ABDCD1C7384CA002BE44C /* Logic */,
+				F86ABD8B1C737036002BE44C /* Supporting Files */,
+				F86ABDC21C737F3E002BE44C /* ViewControllers */,
+				F8D67C491C87820000318B6E /* Views */,
+				F86ABD971C737037002BE44C /* Assets.xcassets */,
+			);
+			path = ResenchukWSTest;
+			sourceTree = "<group>";
+		};
+		F86ABD8B1C737036002BE44C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABD9C1C737037002BE44C /* Info.plist */,
+				F86ABDDA1C748159002BE44C /* PrefixHeader.pch */,
+				F86ABDDB1C7481C4002BE44C /* RWConstants.h */,
+				F86ABDBC1C7371B9002BE44C /* libicucore.tbd */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F86ABDB41C7370B1002BE44C /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABDB81C7370B1002BE44C /* SRWebSocket.h */,
+				F86ABDB91C7370B1002BE44C /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		F86ABDBE1C737909002BE44C /* FDKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABDBF1C737909002BE44C /* FDKeychain.h */,
+				F86ABDC01C737909002BE44C /* FDKeychain.m */,
+			);
+			path = FDKeychain;
+			sourceTree = "<group>";
+		};
+		F86ABDC21C737F3E002BE44C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABDC41C737F74002BE44C /* RWInitialVC.h */,
+				F86ABDC51C737F74002BE44C /* RWInitialVC.m */,
+				F86ABDC71C737F83002BE44C /* RWLoginVC.h */,
+				F86ABDC81C737F83002BE44C /* RWLoginVC.m */,
+				F86ABDCA1C737F9E002BE44C /* RWSuccessLoginVC.h */,
+				F86ABDCB1C737F9E002BE44C /* RWSuccessLoginVC.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F86ABDC31C737F45002BE44C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABDBE1C737909002BE44C /* FDKeychain */,
+				F86ABDB41C7370B1002BE44C /* SocketRocket */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		F86ABDCD1C7384CA002BE44C /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABDD41C746C7B002BE44C /* NSDictionary+Helpers.h */,
+				F86ABDD51C746C7B002BE44C /* NSDictionary+Helpers.m */,
+				F86ABDCE1C7384E7002BE44C /* RWWebSocket.h */,
+				F86ABDCF1C7384E7002BE44C /* RWWebSocket.m */,
+				F86ABDD11C7466F8002BE44C /* RWWebSocketCommands.h */,
+				F86ABDD21C7466F8002BE44C /* RWWebSocketCommands.m */,
+				F86ABDD71C746D12002BE44C /* RWWebSocketResponseHandler.h */,
+				F86ABDD81C746D12002BE44C /* RWWebSocketResponseHandler.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		F8D67C491C87820000318B6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABD991C737037002BE44C /* LaunchScreen.storyboard */,
+				F86ABD941C737036002BE44C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8D67C4A1C87820F00318B6E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F86ABD8E1C737036002BE44C /* RWAppDelegate.h */,
+				F86ABD8F1C737036002BE44C /* RWAppDelegate.m */,
+				F86ABD8C1C737036002BE44C /* main.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F86ABD871C737036002BE44C /* ResenchukWSTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F86ABD9F1C737037002BE44C /* Build configuration list for PBXNativeTarget "ResenchukWSTest" */;
+			buildPhases = (
+				F86ABD841C737036002BE44C /* Sources */,
+				F86ABD851C737036002BE44C /* Frameworks */,
+				F86ABD861C737036002BE44C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResenchukWSTest;
+			productName = ResenchukWSTest;
+			productReference = F86ABD881C737036002BE44C /* ResenchukWSTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F86ABD801C737036002BE44C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "ROMAN RESENCHUK";
+				TargetAttributes = {
+					F86ABD871C737036002BE44C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = F86ABD831C737036002BE44C /* Build configuration list for PBXProject "ResenchukWSTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F86ABD7F1C737036002BE44C;
+			productRefGroup = F86ABD891C737036002BE44C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F86ABD871C737036002BE44C /* ResenchukWSTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F86ABD861C737036002BE44C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86ABD9B1C737037002BE44C /* LaunchScreen.storyboard in Resources */,
+				F86ABD981C737037002BE44C /* Assets.xcassets in Resources */,
+				F86ABD961C737036002BE44C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F86ABD841C737036002BE44C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86ABDD91C746D12002BE44C /* RWWebSocketResponseHandler.m in Sources */,
+				F86ABDD31C7466F8002BE44C /* RWWebSocketCommands.m in Sources */,
+				F86ABDC61C737F74002BE44C /* RWInitialVC.m in Sources */,
+				F86ABDD01C7384E7002BE44C /* RWWebSocket.m in Sources */,
+				F86ABDD61C746C7B002BE44C /* NSDictionary+Helpers.m in Sources */,
+				F86ABDCC1C737F9E002BE44C /* RWSuccessLoginVC.m in Sources */,
+				F86ABD901C737036002BE44C /* RWAppDelegate.m in Sources */,
+				F86ABDC11C737909002BE44C /* FDKeychain.m in Sources */,
+				F86ABDBB1C7370B1002BE44C /* SRWebSocket.m in Sources */,
+				F86ABDC91C737F83002BE44C /* RWLoginVC.m in Sources */,
+				F86ABD8D1C737036002BE44C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F86ABD941C737036002BE44C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F86ABD951C737036002BE44C /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		F86ABD991C737037002BE44C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F86ABD9A1C737037002BE44C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F86ABD9D1C737037002BE44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F86ABD9E1C737037002BE44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F86ABDA01C737037002BE44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ResenchukWSTest/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "ResenchukWSTest/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = romacv.ResenchukWSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F86ABDA11C737037002BE44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ResenchukWSTest/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "ResenchukWSTest/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = romacv.ResenchukWSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F86ABD831C737036002BE44C /* Build configuration list for PBXProject "ResenchukWSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86ABD9D1C737037002BE44C /* Debug */,
+				F86ABD9E1C737037002BE44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F86ABD9F1C737037002BE44C /* Build configuration list for PBXNativeTarget "ResenchukWSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86ABDA01C737037002BE44C /* Debug */,
+				F86ABDA11C737037002BE44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F86ABD801C737036002BE44C /* Project object */;
+}
